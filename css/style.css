@@ -94,7 +94,14 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: var(--color-dark-grey-1);
+}
+
+.customerDetailsContainer h2 {
     margin: 40px 0;
+}
+
+.customerComplaintContainer h2 {
+    margin: 40px 0 20px 0;
 }
 
 .customerDetails {
