@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-lightest-grey: #F2F2F2;
+    --color-light-grey: #F9F9F9;
+    --color-medium-grey: #A4A4A4;
+    --color-dark-grey-1: #616161;
+    --color-dark-grey-2: #9F9F9F;
+    --color-dark-grey-3: #898989;
+    --color-dark-grey-4: #606060;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+body,
+p,
+ul,
+li,
+button,
+input,
+textarea {
+    font-family: var(--secondary-font);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 12px;
+}
+
+.outerContainer {
+    width: 525px;
+    background-color: var(--color-lightest-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.innerContainer {
+    min-height: 100%;
+    width: 465px;
+    background-color: var(--color-white);
+}
+
+.headerContainer .headerImage {
+    width: 100%;
+}
+
+.innerContainer .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.contentContainer .titleContainer {
+    font-size: 14px;
+}
+
+.customerDetailsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customerDetailsContainer h2,
+.customerComplaintContainer h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-dark-grey-1);
+    margin: 40px 0;
+}
+
+.customerDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.customerDetails div:not(.customerComplaintDate) {
+    margin-bottom: 20px;
+}
+
+.customerName,
+.customerEmailAddress,
+.customerComplaintDate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.customerName span.label,
+.customerEmailAddress span.label,
+.customerComplaintDate span.label {
+    color: var(--color-dark-grey-3);
+}
+
+.customerName span.value,
+.customerEmailAddress span.value,
+.customerComplaintDate span.value {
+    color: var(--color-dark-grey-4);
+}
+
+.customerComplaint {
+    min-height: 100%;
+    background-color: var(--color-light-grey);
+    padding: 20px;
+}
+
+.customerComplaint .customerComplaintText {
+    font-style: italic;
+    color: var(--color-dark-grey-2);
+}
+
+.outerContainer .mailFooter {
+    min-height: 100%;
+    min-width: 100%;
+    color: var(--color-medium-grey);
+    text-align: center;
+    padding: 10px 0 5px 0;
+}
+
+.mailFooter div:not(.copyrightLabelContainer) {
+    margin: 20px 0;
+}
